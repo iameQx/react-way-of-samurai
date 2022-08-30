@@ -1,0 +1,12 @@
+.dialogs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dialogsItems {
+  padding: 10px;
+}
+
+.messages {
+  padding: 10px;
+}
