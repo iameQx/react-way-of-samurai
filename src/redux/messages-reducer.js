@@ -14,7 +14,20 @@ export const messagesPageReducer = (state, action) => {
     case "UPDATE-NEW-MESSAGE-TEXT":
       state.newMessageText = action.newText;
       break;
+    default:
+      return state;
   }
+};
 
-  return state;
+export const addMessageActionCreator = () => {
+  return {
+    type: ADD_MESSAGE,
+  };
+};
+
+export const updateNewMessageTextActionCreator = (text) => {
+  return {
+    type: UPDATE_NEW_MESSAGE_TEXT,
+    newText: text,
+  };
 };
